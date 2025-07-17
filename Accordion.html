@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> accordion </title>
+    <script
+    src="https:// cdn.jsdeliver.net.npm
+    /bootstrap@5.3.0/dist/js/bootstrap.
+    bundle.min.js"></script>
+
+</head>
+<body>
+
+    <div
+    class:"container p-5">
+    <div class:"accordion" id="auto collapse accordion">
+
+        <!-- title 1-->
+        <div class:"accordion-item">
+            <h2 class:"accordion-header"
+            id=" accordion title 1">
+            <button
+            class:"accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse 1"
+            aria-expanded="true"
+            aria-controls="collapse 1">
+                accordion title #1
+        </button>
+        </h2>
+
+        <div id="collapse 1"
+        class: "accordion accordion-collapse
+        show" aria-label="heading 1"
+        data-bs-parent="auto collapse accordion">
+
+        <div
+        class:" accordion-body">
+        this is a first title accordion body.
+    </div>
+    </div>
+        </div>
+
+         
+    <!-- title 2-->
+                <div class:"accordion-item">
+            <h2 class:"accordion-header"
+            id=" accordion title 2">
+            <button
+            class:"accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse 2"
+            aria-expanded="false"
+            aria-controls="collapse 2">
+                accordion title #2
+        </button>
+        </h2>
+
+        <div id="collapse 2"
+        class: "accordion accordion-collapse
+        show" aria-label="heading 2"
+        data-bs-parent="auto collapse accordion">
+
+        <div
+        class:" accordion-body">
+        this is a second title accordion body.
+    </div>
+    </div>
+        </div>
+
+        <!-- title 3-->
+
+                <div class:"accordion-item">
+            <h2 class:"accordion-header"
+            id=" accordion title 3">
+            <button
+            class:"accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse 3"
+            aria-expanded="false"
+            aria-controls="collapse 3">
+                accordion title #3
+        </button>
+        </h2>
+
+        <div id="collapse 3"
+        class: "accordion accordion-collapse
+        show" aria-label="heading 3"
+        data-bs-parent="auto collapse accordion">
+
+        <div
+        class:" accordion-body">
+        this is a third title accordion body.
+    </div>
+    </div>
+        </div>
+
+
+    </div>
+</div>
+    
+</body>
+</html>
