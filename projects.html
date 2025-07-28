@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> projects </title>
+    <link
+    href="https://cdn.jsdeliver.net/npm/bootstrap@5.30/dist/css/bootstrap
+    .min.css"rel="stylesheet">
+    <style>
+        body{
+            background-color: #f0f2f5;
+            padding:2rem;
+        }
+        
+        card{
+            border-radius:12px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom:2rem;
+        }
+        verification-code input{
+            width:50px;
+            text-align:center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-md-4">
+            <!-- fund wallet card -->
+             <div class="col-md-4">
+                <div class="card p-3">
+                    <h5> fund wallet </h5>
+                    <input class="form-control
+                    mb-2" placeholder="cardholder name"/>
+                    <select class="form-select mb-2">
+                        <option> credit card
+                        </option>
+                        <option>debit cardholder
+
+                        </option>
+                    </select>
+                    <input class="form-control mb-2 "placeholder="aggregator"/>
+                    <select class="form-select mb-2">
+                        <option>choose wallet</option>
+                    </select>
+                    <input class="form-control mb-3" placeholder="enter amount"/>
+                    <button class="btn btn-dark w-100">
+                        fund wallet
+                    </button>
+                </div>
+             </div>
+             <!-- two factor auth setup-->
+              <div class="col-md-4">
+                <div class="card p-3">
+                    <h5> two-factor authentication</h5>
+                    <p> scan the or code below to set up
+                        authentication
+                    </p>
+                    
+
+
+                    <div class="verification-code d-flex gap-2 justify-content
+                    -center mb-2">
+                    <input class="form-control"maxlength="1"/>
+                    <input class="form-control"maxlength="2"/>
+                    <input class="form-control"maxlength="3"/>
+                    <input class="form-control"maxlength="4"/>
+                </div>
+                <button class="btn btn-dark w-100">
+                </button>
+                </div>
+              </div>
+              <!-- 2fa success message-->
+               <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    <h6>two-factor authentication </h6>
+                    <div class="my-3">
+                        <span class="badge bg-success p-3">
+                            two-factor authentication verified
+                        </span>
+                    </div>
+                    <button class="btn btn-outline-dark">
+                        close
+                    </button>
+                </div>
+               </div>
+
+               <!-- fund request rejection-->
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h6> fund request rejection</h6>
+                        <textarea class="form-control mb-3"
+                        rows="3"></textarea>
+                        <button class="btn btn-danger">reject
+                        </button>
+                    </div>
+                </div>
+
+                <!-- create new role-->
+                 <div class="col-md-4">
+                    <div class="card p-3">
+                        <h6> create new role</h6>
+                        <input class="form-control mb-2"
+                        placeholder="role name"/>
+                        <p><strong>
+                            assign premission:
+                        </strong></p>
+                        <div class="form-ckeck">
+                            <input type="checkbox"
+                            class="form-check-input" id="perm1">
+                            <label
+                            class="form-check-label"
+                            for="perm1">
+                            card holder creation
+                        </label>
+                                                
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox"
+                            class="form-check-input"
+                            id="perm 2">
+                            <label
+                            class="form-check-label"
+                            for="perm2">
+                            card authentication
+                        </label>
+                        </div>
+
+                        <div class="form-ckeck">
+                            <input type="checkbox"
+                            class="form-check-input"
+                            id="perm3">
+                            <label
+                            class="form-check-label"
+                            for="perm3">
+                            cards
+                        </label>
+                        </div>
+
+                        
+
+                    </div>
+                 </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
