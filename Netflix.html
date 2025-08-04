@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netflix Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bg-image {
+      background-image: url("./Screenshot\ 2025-07-31\ 182033.png");
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.4);
+      position: relative;
+      width: 100%;
+      height: 100vh;
+
+    }
+
+    .main-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .email-form input {
+      max-width: 400px;
+      margin: 10px auto;
+      display: inline-block;
+    }
+
+    .top-buttons {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 2;
+    }
+
+    .top-buttons .btn {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="bg-image">
+    <!-- <img src="./Screenshot 2025-07-31 182033.png" class="img-fluid"> -->
+
+
+    <a href="/" class="logo">
+      <img src="./Screenshot 2025-08-01 154353.png" class="img-fluid ">
+    </a>
+
+    <div class="top-buttons">
+      <select class="form-select form-select-sm d-inline-block w-auto">
+        <option selected>English</option>
+        <option value="1">Hindi</option>
+      </select>
+      <a href="#" class="btn btn-danger btn-sm">Sign In</a>
+    </div>
+
+    <div class="container main-content">
+      <h1 class="display-4 fw-bold">Unlimited movies, TV shows and more.</h1>
+      <p class="fs-4">Watch anywhere. Cancel anytime.</p>
+      <p class="fs-6">Ready to watch? Enter your email to create or restart your membership.</p>
+
+      <form class="row justify-content-center email-form">
+        <div class="col-md-6 col-sm-8">
+          <input type="email" class="form-control" placeholder="Email address" required>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-danger">Get Started &gt;</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
