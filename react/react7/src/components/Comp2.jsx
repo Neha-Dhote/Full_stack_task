@@ -1,0 +1,22 @@
+import React, { useContext } from 'react'
+import { useNavigate, useParms } from 'react-router-dom'
+
+import { useData } from '../contexts/DataContext'
+
+const Comp2 = () => {
+
+    let { data, decrease } = useData()
+
+    let navigate = useNavigate()
+
+    return (
+        <div>
+            <h1>this is Components2</h1>
+            <h2>{data}</h2>
+            <button onClick={decrease}>decrease</button>
+            <button onClick={()=>{navigate("/")}}>Go to Home page</button>
+        </div>
+    )
+}
+
+export default Comp2
